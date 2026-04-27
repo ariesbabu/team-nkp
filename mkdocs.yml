@@ -3,16 +3,51 @@ docs_dir: docs
 
 theme:
   name: materialx
+  palette:
+  #   - primary: deep purple
+  #   - accent: black
 
-nav:
-  - Home: index.md
+  # Palette toggle for automatic mode
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
 
-features:
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference
+
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+  features:
   - navigation.instant
   - navigation.instant.progress
   - navigation.path
   - navigation.footer
   - navigation.tracking
+  # - navigation.sections
   - navigation.tabs
   - navigation.tabs.sticky
   # - navigation.expand
@@ -55,3 +90,7 @@ markdown_extensions:
 - md_in_html
 - pymdownx.keys
 - markdown_grid_tables
+
+nav:
+  - Home: index.md
+  - Create NKP Cluster: infra_nkp.md
