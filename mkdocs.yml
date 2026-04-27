@@ -3,3 +3,6 @@ docs_dir: docs
 
 theme:
   name: materialx
+
+nav:
+  - Home: index.md
