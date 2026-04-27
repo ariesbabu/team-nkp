@@ -6,3 +6,52 @@ theme:
 
 nav:
   - Home: index.md
+
+features:
+  - navigation.instant
+  - navigation.instant.progress
+  - navigation.path
+  - navigation.footer
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.tabs.sticky
+  # - navigation.expand
+  - navigation.top
+  - navigation.integrateåß
+  - search.highlight
+  - search.suggest
+  - search.share
+  - toc.follow
+  - announce.dismiss
+  - content.action.edit
+  - content.action.view
+  - content.code.annotate
+  - content.code.copy
+  - content.code.annotate
+  - content.code.select
+
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.snippets
+- pymdownx.superfences:
+    custom_fences:
+    - name: mermaid
+      class: mermaid
+      format: !!python/name:pymdownx.superfences.fence_code_format
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- attr_list
+- md_in_html
+- pymdownx.keys
+- markdown_grid_tables
