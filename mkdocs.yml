@@ -1,0 +1,5 @@
+site_name: NKP Documentation
+docs_dir: docs
+
+theme:
+  name: materialx
